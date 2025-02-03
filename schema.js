@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
   },
   roles: {
     type: [String],
-    default: ['user'], // Default role
+    default: ['user'], 
   },
   profile: {
     firstName: {
@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
     default: null,
   },
 }, {
-  timestamps: true, // Automatically creates 'createdAt' and 'updatedAt' fields
+  timestamps: true, 
 });
 
 module.exports = mongoose.model('User', userSchema);
